@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-header class='ion-no-border'>
+    <ion-toolbar >
+      <ion-buttons class="start">
+        <ion-back-button defaultHref="lawyers"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="ion-text-center">Lawyer Detail</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-card *ngIf="lawyer">
+    <ion-img src={{lawyer.pic}}></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{lawyer.name}}</ion-card-title>
+      <ion-card-subtitle>{{lawyer.phone}}</ion-card-subtitle>
+      <ion-card-subtitle>{{lawyer.web}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{lawyer.info}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

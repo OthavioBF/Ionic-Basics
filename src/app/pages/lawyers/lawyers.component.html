@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-header class='ion-no-border'>
+    <ion-toolbar >
+      <ion-buttons class="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="ion-text-center">Lawyers List</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list *ngFor="let lawyer of lawyers">
+    <ion-item [routerLink]="['/lawyersdetail', lawyer.id]">
+      <ion-avatar slot="start">
+        <ion-img src={{lawyer.pic}}></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>{{lawyer.name}}</h2>
+        <h3>{{lawyer.focus}}</h3>
+        <p>{{lawyer.phone}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,33 @@
+  <ion-header class='ion-no-border'>
+    <ion-toolbar >
+      <ion-buttons class="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="ion-text-center">Contact Us</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-input [(ngModel)]="name" placeholder="Name"></ion-input>
+      </ion-item>
+      <ion-item-divider></ion-item-divider>
+      <ion-item>
+        <ion-input [(ngModel)]="email" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item-divider></ion-item-divider>
+      <ion-item>
+        <ion-textarea [(ngModel)]="message" placeholder="Messasge"></ion-textarea>
+      </ion-item>
+      <ion-item-divider></ion-item-divider>
+      <ion-item button (click)="submit()" class="ion-text-center">
+        <ion-label>Send Message</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title class="ion-text-center">Created by Dream-Makers</ion-title>
+      <ion-title class="ion-text-center" size="small">1313 Mockingburd Lane</ion-title>
+    </ion-toolbar>
+  </ion-footer>

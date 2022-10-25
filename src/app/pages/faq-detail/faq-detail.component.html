@@ -1,0 +1,20 @@
+<ion-content>
+  <ion-header class='ion-no-border'>
+    <ion-toolbar >
+      <ion-buttons class="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="ion-text-center">FAQs Details</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-card *ngIf="faq">
+      <ion-card-header>
+        <ion-card-title>{{faq.title}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{faq.answer}}
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-content>
